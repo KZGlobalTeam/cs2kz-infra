@@ -1,4 +1,11 @@
-excludes = [".gitignore", ".direnv/*", ".editorconfig", "*.lock"]
+excludes = [
+  "*.lock",
+  "*.yaml",
+  ".direnv/*",
+  ".editorconfig",
+  ".gitignore",
+  "LICENSE",
+]
 
 [formatter.nix]
 command = "nixpkgs-fmt"
