@@ -1,0 +1,15 @@
+excludes = [".gitignore", ".direnv/*", ".editorconfig", "*.lock"]
+
+[formatter.nix]
+command = "nixpkgs-fmt"
+includes = ["*.nix"]
+
+[formatter.toml]
+command = "taplo"
+options = ["fmt"]
+includes = ["*.toml"]
+
+[formatter.shell]
+command = "shfmt"
+options = ["--write", "--indent", "2"]
+includes = ["*.sh", ".envrc"]
