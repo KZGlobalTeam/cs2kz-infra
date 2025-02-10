@@ -1,0 +1,23 @@
+name: Deploy
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: ['master']
+
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.KEY }}
+          script: |
+            nixos-rebuild switch \
+              --flake 'github:KZGlobalTeam/cs2kz-infra#cs2kz-api'
