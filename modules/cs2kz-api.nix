@@ -29,7 +29,7 @@
     wantedBy = [ "multi-user.target" ];
     unitConfig.ConditionUser = "schnose";
     environment = {
-      RUST_LOG = "cs2kz=trace,warn";
+      RUST_LOG = "cs2kz=trace,steam_openid=debug,warn";
       KZ_API_ENVIRONMENT = "production";
     };
     script = ''
