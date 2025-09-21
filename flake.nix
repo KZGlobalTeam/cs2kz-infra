@@ -12,13 +12,6 @@
       let
         pkgs = import nixpkgs {
           inherit system;
-          overlays = [
-            (self: super: {
-              depotdownloader = (import inputs.nixpkgs-depotdownloader {
-                inherit system;
-              }).depotdownloader;
-            })
-          ];
         };
       in
       {

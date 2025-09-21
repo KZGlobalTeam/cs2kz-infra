@@ -1,5 +1,11 @@
 { lib, pkgs, inputs, cs2kz-api, sshKeys, ... }:
 
+let
+  depotdownloader = (import inputs.nixpkgs-depotdownloader {
+    inherit (pkgs) system;
+  }).depotdownloader;
+in
+
 {
   imports = [ ./nginx.nix ];
   services = {
@@ -35,7 +41,7 @@
     script = ''
       ${cs2kz-api}/bin/cs2kz-api \
         --config "/etc/cs2kz-api.toml" \
-        --depot-downloader-path "${pkgs.depotdownloader}/bin/DepotDownloader"
+        --depot-downloader-path "${depotdownloader}/bin/DepotDownloader"
     '';
   };
   users = {
