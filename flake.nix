@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs-depotdownloader.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     cs2kz-api.url = "github:KZGlobalTeam/cs2kz-api";
   };
@@ -11,6 +12,13 @@
       let
         pkgs = import nixpkgs {
           inherit system;
+          overlays = [
+            (self: super: {
+              depotdownloader = (import inputs.nixpkgs-depotdownloader {
+                inherit system;
+              }).depotdownloader;
+            })
+          ];
         };
       in
       {
