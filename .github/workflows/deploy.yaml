@@ -20,4 +20,4 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             nixos-rebuild switch \
-              --flake 'github:KZGlobalTeam/cs2kz-infra?ref=${{ github.ref }}#cs2kz-api'
+              --flake 'github:KZGlobalTeam/cs2kz-infra?ref=${{ github.sha }}#cs2kz-api'
