@@ -20,14 +20,15 @@
         "crane": "crane",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-depotdownloader": "nixpkgs-depotdownloader",
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1767443353,
-        "narHash": "sha256-uNdL5M5rPJkFm0FYHVsnSzmYjg5CJA5lIG3uo/Psiuc=",
+        "lastModified": 1768250249,
+        "narHash": "sha256-Asqeg5apayxTw5Y3TgEmvJyQ+AiuTiQG6s0DEnjDxzs=",
         "owner": "KZGlobalTeam",
         "repo": "cs2kz-api",
-        "rev": "579a67acfcfa3123eacb4905475869484b6785e4",
+        "rev": "4d39592bfee1780efebe4520f0ec63839125f6a7",
         "type": "github"
       },
       "original": {
@@ -90,6 +91,22 @@
     },
     "nixpkgs-depotdownloader": {
       "locked": {
+        "lastModified": 1768127708,
+        "narHash": "sha256-1Sm77VfZh3mU0F5OqKABNLWxOuDeHIlcFjsXeeiPazs=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "ffbc9f8cbaacfb331b6017d5a5abb21a492c9a38",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-depotdownloader_2": {
+      "locked": {
         "lastModified": 1758277210,
         "narHash": "sha256-iCGWf/LTy+aY0zFu8q12lK8KuZp7yvdhStehhyX1v8w=",
         "owner": "nixos",
@@ -125,7 +142,7 @@
         "cs2kz-api": "cs2kz-api",
         "flake-utils": "flake-utils_2",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-depotdownloader": "nixpkgs-depotdownloader"
+        "nixpkgs-depotdownloader": "nixpkgs-depotdownloader_2"
       }
     },
     "rust-overlay": {
