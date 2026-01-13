@@ -5,7 +5,7 @@
     (modulesPath + "/profiles/qemu-guest.nix")
     ../modules/base.nix
     ../modules/cs2kz-api.nix
-    ../modules/flarum.nix
+    # ../modules/flarum.nix
   ];
   boot = {
     loader.grub = {
