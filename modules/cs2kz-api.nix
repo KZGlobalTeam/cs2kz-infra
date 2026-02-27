@@ -4,6 +4,24 @@ let
   depotdownloader = (import inputs.nixpkgs-depotdownloader {
     inherit (pkgs) system;
   }).depotdownloader;
+
+  pointsScripts =
+    let
+      filenames = [ "common.py" "calc_filter.py" "calc_run.py" ];
+
+      patchFile = filename: pkgs.writeScript filename ''
+        #!${lib.getExe' inputs.cs2kz-api.packages.${pkgs.stdenv.hostPlatform.system}.python "python3"}
+        ${builtins.readFile "${inputs.cs2kz-api}/scripts/${filename}"}
+      '';
+
+      copyCommand = filename: ''
+        cp ${patchFile filename} $out/bin/${filename}
+      '';
+    in
+    pkgs.runCommand "scripts" { } ''
+      mkdir -p $out/bin
+      ${lib.concatStringsSep "\n" (builtins.map copyCommand filenames)}
+    '';
 in
 
 {
@@ -41,7 +59,8 @@ in
     script = ''
       ${cs2kz-api}/bin/cs2kz-api \
         --config "/etc/cs2kz-api.toml" \
-        --depot-downloader-path "${depotdownloader}/bin/DepotDownloader"
+        --depot-downloader-path "${depotdownloader}/bin/DepotDownloader" \
+        --scripts-path "${pointsScripts}/bin"
     '';
   };
   users = {
