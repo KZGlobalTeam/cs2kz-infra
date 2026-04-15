@@ -24,7 +24,6 @@
         cs2kz-api = let system = "aarch64-linux"; in lib.nixosSystem {
           specialArgs = {
             inherit system inputs;
-            cs2kz-api = inputs.cs2kz-api.packages.${system}.cs2kz-api;
             sshKeys = [
               ''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB4SBKTQ7WJcihtw3QocLXi+xEc/6HklXigYoltI8iNH alphakeks@dawn''
               ''ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPe34iB4eZ5KnO8nKXHtH4V0QZNb7Ro/YxZw7xuCEJ7C max@framework''
