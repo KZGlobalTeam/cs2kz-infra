@@ -70,7 +70,7 @@ in
     wantedBy = [ "multi-user.target" ];
     serviceConfig.User = "schnose";
     environment = {
-      RUST_LOG = "cs2kz=trace,steam_openid=debug,warn";
+      RUST_LOG = "cs2kz=debug,warn";
       KZ_API_ENVIRONMENT = "production";
     };
     script = ''
