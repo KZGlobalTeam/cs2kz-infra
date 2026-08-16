@@ -24,11 +24,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1784893523,
-        "narHash": "sha256-nCsj5+4inr9g2NCx5QXkc1kBiiBnQpjU05VHh+Td+84=",
+        "lastModified": 1786903007,
+        "narHash": "sha256-pYYqdWDm91R8alHoYP5giO2yWrFT+QbHIVWKWVtd6Dw=",
         "owner": "KZGlobalTeam",
         "repo": "cs2kz-api",
-        "rev": "e4577425651e2e258a06933c6ae7c4997028615a",
+        "rev": "d4fe94d01162fe563e660f692954c3546955716b",
         "type": "github"
       },
       "original": {
