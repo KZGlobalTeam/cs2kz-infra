@@ -20,15 +20,15 @@
         "crane": "crane",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-depotdownloader": "nixpkgs-depotdownloader",
+        "nixpkgs-unstable": "nixpkgs-unstable",
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1789021094,
-        "narHash": "sha256-u8uO6+qRbAz+16m00rIbQIg688NcNooVmRr2/6SEIXo=",
+        "lastModified": 1790189281,
+        "narHash": "sha256-7mwo+YJpSC7VZCrE0SI9ZnPUf3x2ZceZ7KTCze5eVW4=",
         "owner": "KZGlobalTeam",
         "repo": "cs2kz-api",
-        "rev": "37a1e96d41e09962819089db590bf606ebc769cb",
+        "rev": "05eadecaf974138bbac1ccb57380834f20af916f",
         "type": "github"
       },
       "original": {
@@ -91,11 +91,11 @@
     },
     "nixpkgs-depotdownloader": {
       "locked": {
-        "lastModified": 1768127708,
-        "narHash": "sha256-1Sm77VfZh3mU0F5OqKABNLWxOuDeHIlcFjsXeeiPazs=",
+        "lastModified": 1758277210,
+        "narHash": "sha256-iCGWf/LTy+aY0zFu8q12lK8KuZp7yvdhStehhyX1v8w=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "ffbc9f8cbaacfb331b6017d5a5abb21a492c9a38",
+        "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
         "type": "github"
       },
       "original": {
@@ -105,13 +105,13 @@
         "type": "github"
       }
     },
-    "nixpkgs-depotdownloader_2": {
+    "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1758277210,
-        "narHash": "sha256-iCGWf/LTy+aY0zFu8q12lK8KuZp7yvdhStehhyX1v8w=",
+        "lastModified": 1790046670,
+        "narHash": "sha256-MYiI+CzL0tuWgRPjGsKCDHqYs2T3OzMlMQWOYWG0qso=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "8eaee110344796db060382e15d3af0a9fc396e0e",
+        "rev": "6774f7bc253789b113a4f39285dc0fa100abeacc",
         "type": "github"
       },
       "original": {
@@ -142,7 +142,7 @@
         "cs2kz-api": "cs2kz-api",
         "flake-utils": "flake-utils_2",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-depotdownloader": "nixpkgs-depotdownloader_2"
+        "nixpkgs-depotdownloader": "nixpkgs-depotdownloader"
       }
     },
     "rust-overlay": {
