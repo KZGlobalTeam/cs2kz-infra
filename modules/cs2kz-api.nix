@@ -55,7 +55,7 @@ in
       initialDatabases = [
         {
           name = "cs2kz";
-          schema = "${inputs.cs2kz-api}/crates/cs2kz/migrations/0001_initial.up.sql";
+          # schema = "${inputs.cs2kz-api}/crates/cs2kz/migrations/0001_initial.up.sql";
         }
       ];
     };
