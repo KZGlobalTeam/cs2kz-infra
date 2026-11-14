@@ -24,11 +24,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1794398212,
-        "narHash": "sha256-ajohYDTP1AzlAsSWNV/PBezvSU2KJ+6qsrHu33aXHNc=",
+        "lastModified": 1794661936,
+        "narHash": "sha256-GD1Pzg+lrhGufWaHUriBpILaGyxPpARo66zA8xVtcqY=",
         "owner": "KZGlobalTeam",
         "repo": "cs2kz-api",
-        "rev": "2fc4c009edb89c7aeeac3a10153b65f13930c6c3",
+        "rev": "66e4f1e510138a4d1d45b0bfb76ec1d34b1928dc",
         "type": "github"
       },
       "original": {
@@ -153,11 +153,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1778210054,
-        "narHash": "sha256-iYINsX0BVDxTXd0z4FzDpBYHZ9fWUtwjG9cKSXwe9Tg=",
+        "lastModified": 1794646145,
+        "narHash": "sha256-rpqDyUM/d5fACYB8W+wKxxO57ICWjjalzb2X25oFFkY=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "bc83d66023d19fb301ee98772643b24b6129ef48",
+        "rev": "5b87ee0513c29127a01ad06e9cb362ea5ce91e78",
         "type": "github"
       },
       "original": {
